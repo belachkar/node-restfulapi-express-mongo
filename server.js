@@ -45,9 +45,7 @@ app.post('/api/user/create', UserControl.create);
 app.post('/api/user/update', UserControl.update);
 app.delete('/api/user/delete', UserControl.remove);
 app.get('/api/users', UserControl.retreive);
-app.get('/', (req, res) => {
-  res.status(200).send('<h1>It works</h1>');
-});
+app.get('/', (req, res) => res.status(200).send('<h1>It works</h1>'));
 
 // Starting the server
 app.listen(serverParams.port, () => {
