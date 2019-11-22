@@ -1,6 +1,6 @@
-# Node.JS RESTful API with Express and MongoDB
+# Mini Node.JS RESTful API with Express and MongoDB
 
-Using Express and MongoDB
+A mini Node.JS RESTful API with Express and MongoDB Tutorial.
 
 ## Dependecies
 
@@ -14,3 +14,15 @@ Using Express and MongoDB
 | Name    | Version | Description                             |
 | ------- | ------: | --------------------------------------- |
 | nodemon |       * | Starting the server on a watching mode. |
+
+> nodemon needs to be  installed, if not installed globally, with the command
+>
+> ```nginx
+> npm i -D nodemon
+> ```
+>
+> or globally
+>
+> ```nginx
+> npm i -g nodemon
+> ```
