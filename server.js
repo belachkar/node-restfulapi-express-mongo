@@ -30,16 +30,21 @@ const dbParams = {
 // Database connection
 mongoose
   .connect(dbParams.getURIS(), dbParams.options)
-  .then(() => console.log('Connected to MongoDB database...'))
+  .then(() => console.log(`Connected to MongoDB on: ${dbParams.getURIS()}...`))
   .catch(err => console.error(err.message));
 
-// Middleware
+// Middlewares
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Controllers
+const UserControl = require('./controllers/UserControl');
 
 // Routes
+app.post('/api/user/create', UserControl.create);
+app.post('/api/user/update', UserControl.update);
+app.delete('/api/user/delete', UserControl.remove);
+app.get('/api/users', UserControl.retreive);
 app.get('/', (req, res) => {
   res.status(200).send('<h1>It works</h1>');
 });
@@ -47,5 +52,5 @@ app.get('/', (req, res) => {
 // Starting the server
 app.listen(serverParams.port, () => {
   const { host, port } = serverParams;
-  console.log(`Server started on ${host}:${port}...`);
+  console.log(`Server started on: ${host}:${port}...`);
 });
