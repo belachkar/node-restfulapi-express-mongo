@@ -1,0 +1,30 @@
+{
+  "name": "node-restfulapi-express-mongo",
+  "version": "0.0.1",
+  "description": "Node.JS RESTful API with Express and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "start:w": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belachkar/node-restfulapi-express-mongo.git"
+  },
+  "keywords": [
+    "Node.JS",
+    "RESTful",
+    "ExpressJS",
+    "MongoDB"
+  ],
+  "author": "Belachkar Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belachkar/node-restfulapi-express-mongo/issues"
+  },
+  "homepage": "https://github.com/belachkar/node-restfulapi-express-mongo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.7.12"
+  }
+}
