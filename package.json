@@ -25,6 +25,6 @@
   "homepage": "https://github.com/belachkar/node-restfulapi-express-mongo#readme",
   "dependencies": {
     "express": "^4.19.2",
-    "mongoose": "^5.13.20"
+    "mongoose": "^8.10.0"
   }
 }
